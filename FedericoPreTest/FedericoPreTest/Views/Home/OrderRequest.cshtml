@@ -1,0 +1,17 @@
+﻿
+
+@{
+    ViewBag.Title = "ORDER REQUEST";
+}
+<h2>@ViewBag.Title.</h2>
+
+<div class="text-warning">
+    <h4>@ViewBag.Message</h4>
+</div>
+
+@using(Html.BeginForm("OrderRequest","Home",FormMethod.Post)) {
+   <b>Codice</b> @Html.TextBox("codice",null);
+    <b>Descrizione</b> @Html.TextBox("descrizione" ,null);
+    <input type="submit" value="Ricerca"/>
+
+}
